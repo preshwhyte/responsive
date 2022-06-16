@@ -1,0 +1,133 @@
+@import url();
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --primary-color:hsl(0, 100%, 74%);
+    --primary-color2:hsl(154, 59%, 51%);
+    --neutral-color:hsl(249, 10%, 26%) ;
+    --neutarl-color2:hsl(246, 25%, 77%);
+    --accent-color:hsl(248, 32%, 49%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* desktop */
+@media (max-width:1440px) {
+    
+
+body{
+    background-image: url(images/bg-intro-desktop.png);
+    background-color:var(--primary-color) ;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    
+    align-items: center;
+    width:70%;
+    margin: auto;
+    margin-top: 50px;
+    height: 400px;
+}
+.section1{
+    color: white;
+}
+.section1 h1{
+    width: 70%;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.section1 p{
+    font-size: 16px;
+}
+.section2{
+    width: 350px;
+    text-align: center;
+
+}
+.section2 h5{
+    background-color: var(--accent-color);
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+}
+.form{
+    background-color: white;
+    width: 100%;
+    border: white 5px solid;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    height: 350px;
+    
+}
+form{
+    line-height: 1.2;
+    
+    
+}
+input{
+ width: 100%;
+ padding: 5px;   
+ 
+}
+.input{
+    padding: 12px;
+    
+}
+.input button{
+    background-color: var(--primary-color2);
+
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+
+}
+form input[type="text"]{
+    
+    border-color: red;
+    background-image: url("images/icon-error.svg");
+    
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.section2 h5 span{
+    color: var(--neutarl-color2);
+}
+span{
+    color: red;
+}
+.form p{
+    font-size:xx-small;
+    color: var(--neutarl-color2);
+}
+}
+/*mobile*/
+@media (max-width:375px) {
+    .body{
+        background-image: url(images/bg-intro-mobile.png)
+    }
+    .container{
+        grid-template-columns: 1fr;
+        align-items: center;
+        
+    }
+    .section1 h1{
+        width: 100%;
+
+    }
+    .section1 p{
+        text-align: center;
+        
+    }
+}
